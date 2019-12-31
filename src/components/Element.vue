@@ -6,6 +6,7 @@ https://vuejs.org/v2/guide/computed.html#Computed-Caching-vs-Methods
 
 <template>
   <div id="event-element">
+    <input type="checkbox" id="checkbox" v-model="checked"/>
     id:{{event.id}}
     object:{{event.object}}
     <button v-on:click='toggle()'>{{opend ? 'Close' : 'Open'}}</button>
@@ -39,13 +40,14 @@ export default {
   },
   data: function(){
     return {
-      opend: false
+      opend: false,
+      checked: false,
     }
   },
   methods: {
     toggle: function(){
       this.opend = !this.opend
-    }
+    },
   }
 }
 </script>
