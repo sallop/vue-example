@@ -12,7 +12,10 @@ https://forum.vuejs.org/t/how-to-set-vue-instance-data-property-to-data-attribut
     </select>
     </div>
     <div class="button">
+      <button>OK</button>
+      <!--
       <button>{{selected}}</button>
+      -->
     </div>
   </div>
 </template>
@@ -46,8 +49,8 @@ export default {
 }
 
 #select-box {
-  width: 240px;
   /* background-color: dark-green;
+  width: 240px;
   */
   background-color: lightblue;
 }

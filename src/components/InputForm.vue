@@ -2,15 +2,17 @@
 https://vuejs.org/v2/guide/forms.html
 https://forum.vuejs.org/t/how-to-set-vue-instance-data-property-to-data-attribute/39219
 -->
-
 <template>
-  <div id="checkbox">
+  <div id="input-form">
     <input
-       type="checkbox"
-       v-model="toggle"
+       v-model="text"
+       placeholder="search key"
+       type="input-form"
+    >
+    <!--
        true-value="yes"
        false-value="no"
-    >
+    -->
     <div>{{text}}</div>
   </div>
 </template>
@@ -18,12 +20,11 @@ https://forum.vuejs.org/t/how-to-set-vue-instance-data-property-to-data-attribut
 <script>
 
 export default {
-  name: 'checkbox',
-  props: ['text'],
+  name: 'input-form',
+  // props: ['text'],
   data: function(){
     return {
-      value: 0,
-      toggle: true,
+      text: "",
     }
   }
 }
