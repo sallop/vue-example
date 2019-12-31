@@ -7,6 +7,7 @@
       <SelectBox/>
     <CheckBox text="new text"/>
     -->
+    <Login/>
     <List></List>
     <FixedPane></FixedPane>
   </div>
@@ -19,6 +20,7 @@
 // import CheckBox from './components/CheckBox.vue'
 import List from './components/List.vue'
 import FixedPane from './components/FixedPane.vue'
+import Login from './components/Login.vue'
 
 export default {
   name: 'app',
@@ -27,7 +29,8 @@ export default {
     //SelectBox,
     //CheckBox,
     List,
-    FixedPane
+    FixedPane,
+    Login
   }
 }
 </script>
